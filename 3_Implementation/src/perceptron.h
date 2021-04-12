@@ -1,0 +1,1 @@
+void *initWeights(int *weights);
