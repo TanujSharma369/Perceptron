@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include "perceptron.h"
 int weights[3];
 
 struct Data{
@@ -11,7 +11,8 @@ struct Data{
 
 int main(int argc, char const *argv[])
 {
-    
+    initWeights(weights);
+    display(weights);
     
     return 0;
 }
