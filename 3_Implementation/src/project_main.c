@@ -2,18 +2,11 @@
 #include "perceptron.h"
 int weights[3];
 
-struct Data{
-    int x[3];
-    int y[3];
-    int output[3];
-};
-
-
 int main(int argc, char const *argv[])
 {
+    struct Data data;
     initWeights(weights);
-    
-    display(weights);
-    
+    initData(&data);
+    displayData(&data);
     return 0;
 }
