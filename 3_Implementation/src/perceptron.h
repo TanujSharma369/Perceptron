@@ -65,3 +65,9 @@ int error(struct Data *data);
  * @param pos determines which weight to reinitilize
  */
 void reInitWeights(struct Data *data, int pos);
+
+/**
+ * @brief it will be used by user to make predictions
+ * 
+ */
+int predict(int x, int y, struct Data *data);

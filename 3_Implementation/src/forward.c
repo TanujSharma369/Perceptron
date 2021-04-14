@@ -4,8 +4,9 @@
 void forwardPropagation(struct Data *data, int epochs){
     int gx = 0;
     int i=0,pos=-1;
-    int temp=0;
-    while(temp!=epochs){
+    int temp=1;
+    int flag=0;
+    while(temp<=epochs){
     gx=0;
     gx = data->weights[0] + data->weights[1] * data->x[i] + data->weights[2] * data->y[i];
     gx = activation(gx);
@@ -15,7 +16,6 @@ void forwardPropagation(struct Data *data, int epochs){
          data->weights[0]-= 1;
          else 
          data->weights[pos]+=1; 
-         //printf("| %d ",data->weights[pos]);
          i=0;
          if(pos==2) pos = -1;
          
@@ -24,11 +24,15 @@ void forwardPropagation(struct Data *data, int epochs){
      i++;
      if(i==4){
       i=0;
-     printf("\nlearned in %d epochs\n",temp);
-     break;
+      flag=1;
      }
+     
     }
-    
+    printf("\nEpoch:%d/%d ->->->->->->->->->100:\n",temp,epochs);
    temp++;
     } 
+    if(flag==1)
+     printf("\nLearning Accuracy : 100%c",'%');
+    else
+    printf("\nLearning Accuracy : 50%c",'%'); 
 }
