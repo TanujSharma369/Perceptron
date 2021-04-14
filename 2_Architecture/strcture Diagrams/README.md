@@ -1,2 +1,2 @@
 ## Class Diagram
-![SWOT Analysis]()
+![SWOT Analysis](https://github.com/TanujSharma369/Perceptron/blob/master/6_ImagesAndVideos/class.jpeg)
