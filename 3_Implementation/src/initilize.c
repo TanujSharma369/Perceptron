@@ -1,4 +1,5 @@
 #include "perceptron.h"
+#include<stdio.h>
 void initWeights(struct Data *data){
     for(int i=0;i<3;i++)
      data->weights[i]=0;
@@ -22,4 +23,12 @@ void initOutput(struct Data *data){
   data->output[2]=1;
   data->output[3]=1;
 }
+
+/*void reInitWeights(struct Data *data, int pos){
+  if(pos==0)
+   data->weights[0]-= 1;
+  else 
+  data->weights[pos]+=1; 
+  printf("| %d ",data->weights[pos]);
+}*/
 

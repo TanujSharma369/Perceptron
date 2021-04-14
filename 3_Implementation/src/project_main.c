@@ -9,7 +9,7 @@ int main(int argc, char const *argv[])
     initDataX(&data);
     initDataY(&data);
     initOutput(&data);
-    //displayData(&data);
-   // displayWeight(&data);
+    forwardPropagation(&data, 20);
+    //displayWeight(&data);
     return 0;
 }

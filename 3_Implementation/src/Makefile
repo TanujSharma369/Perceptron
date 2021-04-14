@@ -1,4 +1,4 @@
-source = project_main.c initilize.c display.c
+source = project_main.c initilize.c display.c activation.c forward.c
 all: $(source)
 	gcc $(source) -o run.exe
 run: run.exe	
