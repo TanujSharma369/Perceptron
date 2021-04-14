@@ -1,9 +1,12 @@
 extern struct Data{
-    int x[3];
-    int y[3];
-    int output[3];
+    int x[4];
+    int y[4];
+    int output[4];
+    int weights[3];
 }Data;
-void initWeights(int *weights);
-void displayWeight(int *weights);
+void initWeights(struct Data *data);
+void displayWeight(struct Data *data);
 void displayData(struct Data *data);
-void initData(struct Data *data);
+void initDataX(struct Data *data);
+void initDataY(struct Data *data);
+void initOutput(struct Data *data);
