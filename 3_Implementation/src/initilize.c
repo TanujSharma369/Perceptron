@@ -19,16 +19,10 @@ void initDataY(struct Data *data){
 }
 void initOutput(struct Data *data){
   data->output[0]=0;
-  data->output[1]=1;
-  data->output[2]=1;
+  data->output[1]=0;
+  data->output[2]=0;
   data->output[3]=1;
 }
 
-/*void reInitWeights(struct Data *data, int pos){
-  if(pos==0)
-   data->weights[0]-= 1;
-  else 
-  data->weights[pos]+=1; 
-  printf("| %d ",data->weights[pos]);
-}*/
+
 

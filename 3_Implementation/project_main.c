@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "perceptron.h"
+#include "src/perceptron.h"
 
 
 int main(int argc, char const *argv[])
@@ -9,7 +9,11 @@ int main(int argc, char const *argv[])
     initDataX(&data);
     initDataY(&data);
     initOutput(&data);
+    printf("\nInitial weights\n");
+    displayWeight(&data);
     forwardPropagation(&data, 20);
-    //displayWeight(&data);
+    printf("\nAfter Learning\n");
+    displayWeight(&data);
+    getchar();
     return 0;
 }

@@ -15,7 +15,7 @@ void forwardPropagation(struct Data *data, int epochs){
          data->weights[0]-= 1;
          else 
          data->weights[pos]+=1; 
-        printf("| %d ",data->weights[pos]);
+         //printf("| %d ",data->weights[pos]);
          i=0;
          if(pos==2) pos = -1;
          
@@ -28,7 +28,7 @@ void forwardPropagation(struct Data *data, int epochs){
      break;
      }
     }
+    
    temp++;
     } 
-
 }
