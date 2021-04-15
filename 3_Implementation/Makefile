@@ -19,7 +19,7 @@ all:
 	gcc $(source) -o $(call FixPath,$(PROJECT_NAME).$(EXEC))
 
 run: 	
-	$(call FixPath,$(PROJECT_NAME).$(EXEC))
+	./$(call FixPath,$(PROJECT_NAME).$(EXEC))
 
 clear:
 	$(RM) *.$(EXEC)	
