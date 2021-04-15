@@ -11,6 +11,10 @@ void forwardPropagation(struct Data *data, int epochs){
     int temp=1;
     int flag=0;
     char *prediction = "Fail";
+    /**
+     * @brief learning process started
+     * 
+     */
     while(temp<=epochs){
     gx=0;
     gx = data->weights[0] + data->weights[1] * data->x[i] + data->weights[2] * data->y[i];
@@ -33,6 +37,10 @@ void forwardPropagation(struct Data *data, int epochs){
      }
      prediction = "Pass";
     }
+    /**
+     * @brief displaying epochs
+     * 
+     */
     printf("\nEpoch:%d/%d ->->->->->->->->->100: prediction: %s\n",temp,epochs,prediction);
    temp++;
     } 

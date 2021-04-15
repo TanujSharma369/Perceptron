@@ -55,10 +55,6 @@ int activation(int gx);
  */
 void forwardPropagation(struct Data *data, int epochs);
 
-/**
- * @brief error() calculates the total error made after forward propagation 
- */
-int error(struct Data *data);
 
 /**
  * @brief reinitilizes the weights according to calculated error
