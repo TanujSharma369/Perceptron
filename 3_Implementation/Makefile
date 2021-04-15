@@ -15,11 +15,11 @@ else
 endif
 .PHONY: run clean test doc all
 
-all: $(source)
+all: 
 	gcc $(source) -o $(call FixPath,$(PROJECT_NAME).$(EXEC))
 
 run: 	
 	$(call FixPath,$(PROJECT_NAME).$(EXEC))
 
 clear:
-	del *.exe *.o 	
+	$(RM) *.$(EXEC)	
