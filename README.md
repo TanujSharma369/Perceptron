@@ -1,5 +1,9 @@
 # PERCEPTRON
-[![C/C++ CI](https://github.com/TanujSharma369/Perceptron/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/TanujSharma369/Perceptron/actions/workflows/c-cpp.yml)
+|CI|Code Quality Score|Code Grade|
+|---|---|---|
+|[![C/C++ CI](https://github.com/TanujSharma369/Perceptron/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/TanujSharma369/Perceptron/actions/workflows/c-cpp.yml) | [![Code Quality Score](https://www.code-inspector.com/project/21278/score/svg)]() | [![Code Quality Score](https://www.code-inspector.com/project/21278/status/svg)]() 
+
+
 
 ![Diagram](https://github.com/TanujSharma369/Perceptron/blob/master/6_ImagesAndVideos/perceptron.png)
 
