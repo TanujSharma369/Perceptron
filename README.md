@@ -1,4 +1,6 @@
 # PERCEPTRON
+[![C/C++ CI](https://github.com/TanujSharma369/Perceptron/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/TanujSharma369/Perceptron/actions/workflows/c-cpp.yml)
+
 ![Diagram](https://github.com/TanujSharma369/Perceptron/blob/master/6_ImagesAndVideos/perceptron.png)
 
 ## Folder Structure
